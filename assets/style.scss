@@ -1,0 +1,12 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+body {
+    height: 100vh;
+    background: linear-gradient($back-bot, $back-top);
+}
+
+.app__body {
+    @include content;
+}
+

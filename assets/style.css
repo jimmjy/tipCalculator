@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  background: linear-gradient(#888484, #383535); }
+
+.app__body {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #808080;
+  text-align: center;
+  background: #ebe8c3c4;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px 1px black; }
+
+/*# sourceMappingURL=style.css.map */
