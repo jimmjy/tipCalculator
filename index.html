@@ -20,11 +20,11 @@
                     How much was your bill?
                 </p>
                 <label for="cost__input">$</label>
-                <input type="text" name="cost" id="cost__input">
+                <input type="number" name="cost" id="cost__input" min="0" placeholder="e.g. $20.00">
             </div>
             <div class="service">
                 <p class="how__service">How was your Service?</p>
-                <select name="service__question" id="service__options">
+                <select name="service__question" id="service__options" required>
                     <option value="default" selected="selected">-- Choose an option -- </option>
                     <option value="0.3">30% - Outstanding</option>
                     <option value="0.2">20% - Good</option>
@@ -35,7 +35,7 @@
             </div>
             <div class="share">
                 <p class="people__share">How many people are sharing the bill?</p>
-                <input type="text" name="people" id="share__amount">
+                <input type="number" name="people" id="share__amount" min="1">
                 <label for="share__amount">people</label>
             </div>
             <div class="btn">

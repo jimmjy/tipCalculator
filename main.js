@@ -8,7 +8,7 @@ tip.style.display = 'none';
 tipAmount.style.display = 'none';
 reset.style.display = 'none';
 
-//function to regrieve info from fields and to calculate how much per person
+//function to retrieve info from fields and to calculate how much per person
 
 function values () {
     totalCost = document.getElementById('cost__input').value;
@@ -40,10 +40,20 @@ button.onclick = function() {
 
     let tipTotal = tipCalculate().toFixed(2);
 
-    tipAmount.innerHTML = '$ ' + tipTotal;
-    tip.style.display = 'block';
-    tipAmount.style.display = 'block';
-    reset.style.display = 'block';
+    if(isNaN(tipTotal)) {
+        tipAmount.innerHTML = 'Please enter valid information';
+        tipAmount.style.display = 'block';
+    } else {
+        tipAmount.innerHTML = '$ ' + tipTotal;
+        tip.style.display = 'block';
+        tipAmount.style.display = 'block';
+        reset.style.display = 'block';
+    }
+
+    
+    
+
+    
 };
 
 

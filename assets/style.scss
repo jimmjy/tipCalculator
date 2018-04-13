@@ -3,7 +3,9 @@
 
 body {
     height: 100vh;
-    background: linear-gradient($back-bot, $back-top);
+    background: $main-background;
+
+    
 }
 
 .app__body {
