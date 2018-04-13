@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+</head>
+<body>
+    <div class="app__body">
+        <header class="app__name">
+            <h1 class="name">
+                Tip Calculator
+            </h1>
+        </header>
+        <main class="main__content">
+            <div class="bill__cost">
+                <p class="how__much">
+                    How much was your bill?
+                </p>
+                <label for="cost__input">$</label>
+                <input type="text" name="cost" id="cost__input">
+            </div>
+            <div class="service">
+                <p class="how__service">How was your Service?</p>
+                <select name="service__question" id="service__options">
+                    <option value="default" selected="selected">-- Choose an option -- </option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was okay</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </div>
+            <div class="share">
+                <p class="people__share">How many people are sharing the bill?</p>
+                <input type="text" name="people" id="share__amount">
+                <label for="share__amount">people</label>
+            </div>
+            <div class="btn">
+                    <button class="calculate">CALCULATE!</button>
+            </div>
+        </main>
+        <footer class="total__top">
+            <div class="tip__amount">
+                <p class="output">TIP PER PERSON</p>
+                <p class="tipAmount">$0.00</p>
+            </div>
+            <div class="reset">
+                <button class="reset__button">Reset Form</button>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
