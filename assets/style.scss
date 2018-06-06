@@ -17,3 +17,11 @@ body {
 .app__name, .main__content, .total__tip {
    @include wrapper;
 }
+
+input {
+    @include input;
+}
+
+.btn {
+    margin-top: 10px;
+}

@@ -16,4 +16,11 @@ body {
   width: 50%;
   margin: 0 auto; }
 
+input {
+  width: 90%;
+  margin: 0 auto; }
+
+.btn {
+  margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
