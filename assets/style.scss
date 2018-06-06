@@ -1,6 +1,8 @@
 @import './partials/variables';
 @import './partials/mixins';
 
+
+
 body {
     height: 100vh;
     background: $main-background;
@@ -12,3 +14,6 @@ body {
     @include content;
 }
 
+.app__name, .main__content, .total__tip {
+   @include wrapper;
+}

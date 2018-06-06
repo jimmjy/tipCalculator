@@ -6,5 +6,10 @@
     text-align: center;
     background: $back-content;
     border-radius: 30px;
-    box-shadow: 2px 2px 10px 1px black;
+    box-shadow: 2px 2px 10px 1px rgb(24, 22, 22);
+}
+
+@mixin wrapper {
+    width: 50%;
+    margin: 0 auto;
 }
